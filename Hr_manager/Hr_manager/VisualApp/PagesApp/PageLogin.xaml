@@ -1,0 +1,57 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
+     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Hr_manager.VisualApp.PagesApp.PageLogin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageLogin">
+    <Page.Resources>
+        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+            <Setter Property="materialDesign:ColorZoneAssist.Mode" Value="Standard"/>
+            <Setter Property="Foreground" Value="#FF234B6E"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+
+        </Style>
+        <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource MaterialDesignFilledPasswordBox}">
+            <Setter Property="materialDesign:ColorZoneAssist.Mode" Value="Standard"/>
+            <Setter Property="Foreground" Value="#FF234B6E"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="{x:Type Label}" BasedOn="{StaticResource MaterialDesignLabel}">
+            <Setter Property="materialDesign:ColorZoneAssist.Mode" Value="Standard"/>
+            <Setter Property="Foreground" Value="#FF234B6E"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignFlatDarkButton}">
+            <Setter Property="materialDesign:ColorZoneAssist.Mode" Value="Standard"/>
+            <Setter Property="Foreground" Value="#FF234B6E"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FF61C8AD">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" Margin="10">
+
+            <PasswordBox x:Name="TxtPassword" materialDesign:HintAssist.Hint="Ваш код">
+            </PasswordBox>
+            <StackPanel>
+                <Button Content="Авторизоваться" Click="ClEventAutho"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

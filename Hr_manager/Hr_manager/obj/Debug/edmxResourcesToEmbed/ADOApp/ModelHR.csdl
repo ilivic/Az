@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HR_specialistsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id_comment" />
+    </Key>
+    <Property Name="Id_comment" Type="Int32" Nullable="false" />
+    <Property Name="Creater_id" Type="Int32" Nullable="false" />
+    <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DateCreate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Task_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Task" Relationship="Self.FK_Comment_Task" FromRole="Comment" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Intern">
+    <Key>
+      <PropertyRef Name="Id_intern" />
+    </Key>
+    <Property Name="Id_intern" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DataStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataFinish" Type="DateTime" Precision="0" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="InternTask" Relationship="Self.FK_InternTask_Intern" FromRole="Intern" ToRole="InternTask" />
+  </EntityType>
+  <EntityType Name="InternTask">
+    <Key>
+      <PropertyRef Name="Id_IT" />
+    </Key>
+    <Property Name="Id_IT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Task_id" Type="Int32" Nullable="false" />
+    <Property Name="Intern_id" Type="Int32" Nullable="false" />
+    <Property Name="Data" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateBegin" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DateEnd" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Intern" Relationship="Self.FK_InternTask_Intern" FromRole="InternTask" ToRole="Intern" />
+    <NavigationProperty Name="Task" Relationship="Self.FK_InternTask_Task" FromRole="InternTask" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="Id_location" />
+    </Key>
+    <Property Name="Id_location" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Locc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Diskription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Task" Relationship="Self.FK_Task_Location" FromRole="Location" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id_role" />
+    </Key>
+    <Property Name="Id_role" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Worker" Relationship="Self.FK_Worker_Role" FromRole="Role" ToRole="Worker" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id_status" />
+    </Key>
+    <Property Name="Id_status" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Task" Relationship="Self.FK_Task_Status" FromRole="Status" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id_task" />
+    </Key>
+    <Property Name="Id_task" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status_id" Type="Int32" Nullable="false" />
+    <Property Name="Creater_id" Type="Int32" Nullable="false" />
+    <Property Name="Location_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Comment" Relationship="Self.FK_Comment_Task" FromRole="Task" ToRole="Comment" />
+    <NavigationProperty Name="InternTask" Relationship="Self.FK_InternTask_Task" FromRole="Task" ToRole="InternTask" />
+    <NavigationProperty Name="Location" Relationship="Self.FK_Task_Location" FromRole="Task" ToRole="Location" />
+    <NavigationProperty Name="Status" Relationship="Self.FK_Task_Status" FromRole="Task" ToRole="Status" />
+    <NavigationProperty Name="Worker" Relationship="Self.FK_Task_Worker" FromRole="Task" ToRole="Worker" />
+  </EntityType>
+  <EntityType Name="Worker">
+    <Key>
+      <PropertyRef Name="Id_worker" />
+    </Key>
+    <Property Name="Id_worker" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodeLogin" Type="Double" Nullable="false" />
+    <Property Name="Role_id" Type="Int32" Nullable="false" />
+    <Property Name="Face" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_Worker_Role" FromRole="Worker" ToRole="Role" />
+    <NavigationProperty Name="Task" Relationship="Self.FK_Task_Worker" FromRole="Worker" ToRole="Task" />
+  </EntityType>
+  <Association Name="FK_Comment_Task">
+    <End Role="Task" Type="Self.Task" Multiplicity="1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id_task" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InternTask_Intern">
+    <End Role="Intern" Type="Self.Intern" Multiplicity="1" />
+    <End Role="InternTask" Type="Self.InternTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Intern">
+        <PropertyRef Name="Id_intern" />
+      </Principal>
+      <Dependent Role="InternTask">
+        <PropertyRef Name="Intern_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InternTask_Task">
+    <End Role="Task" Type="Self.Task" Multiplicity="1" />
+    <End Role="InternTask" Type="Self.InternTask" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id_task" />
+      </Principal>
+      <Dependent Role="InternTask">
+        <PropertyRef Name="Task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Location">
+    <End Role="Location" Type="Self.Location" Multiplicity="1" />
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id_location" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Location_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Worker_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Worker" Type="Self.Worker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id_role" />
+      </Principal>
+      <Dependent Role="Worker">
+        <PropertyRef Name="Role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id_status" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Worker">
+    <End Role="Worker" Type="Self.Worker" Multiplicity="1" />
+    <End Role="Task" Type="Self.Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Worker">
+        <PropertyRef Name="Id_worker" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Creater_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HR_specialistsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Comment" EntityType="Self.Comment" />
+    <EntitySet Name="Intern" EntityType="Self.Intern" />
+    <EntitySet Name="InternTask" EntityType="Self.InternTask" />
+    <EntitySet Name="Location" EntityType="Self.Location" />
+    <EntitySet Name="Role" EntityType="Self.Role" />
+    <EntitySet Name="Status" EntityType="Self.Status" />
+    <EntitySet Name="Task" EntityType="Self.Task" />
+    <EntitySet Name="Worker" EntityType="Self.Worker" />
+    <AssociationSet Name="FK_Comment_Task" Association="Self.FK_Comment_Task">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InternTask_Intern" Association="Self.FK_InternTask_Intern">
+      <End Role="Intern" EntitySet="Intern" />
+      <End Role="InternTask" EntitySet="InternTask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InternTask_Task" Association="Self.FK_InternTask_Task">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="InternTask" EntitySet="InternTask" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Location" Association="Self.FK_Task_Location">
+      <End Role="Location" EntitySet="Location" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Worker_Role" Association="Self.FK_Worker_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Worker" EntitySet="Worker" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Status" Association="Self.FK_Task_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Worker" Association="Self.FK_Task_Worker">
+      <End Role="Worker" EntitySet="Worker" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

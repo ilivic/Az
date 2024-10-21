@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище HR_specialistsModelContainer" CdmEntityContainer="HR_specialistsEntities">
+    <EntitySetMapping Name="Comment">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
+          <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="Task_id" ColumnName="Task_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Intern">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Intern">
+        <MappingFragment StoreEntitySet="Intern">
+          <ScalarProperty Name="Id_intern" ColumnName="Id_intern" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="DataStart" ColumnName="DataStart" />
+          <ScalarProperty Name="DataFinish" ColumnName="DataFinish" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InternTask">
+      <EntityTypeMapping TypeName="HR_specialistsModel.InternTask">
+        <MappingFragment StoreEntitySet="InternTask">
+          <ScalarProperty Name="Id_IT" ColumnName="Id_IT" />
+          <ScalarProperty Name="Task_id" ColumnName="Task_id" />
+          <ScalarProperty Name="Intern_id" ColumnName="Intern_id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="DateBegin" ColumnName="DateBegin" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Location">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="Id_location" ColumnName="Id_location" />
+          <ScalarProperty Name="Locc" ColumnName="Locc" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Diskription" ColumnName="Diskription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id_role" ColumnName="Id_role" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Id_status" ColumnName="Id_status" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Task">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="Id_task" ColumnName="Id_task" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TContent" ColumnName="TContent" />
+          <ScalarProperty Name="Status_id" ColumnName="Status_id" />
+          <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
+          <ScalarProperty Name="Location_id" ColumnName="Location_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Worker">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Worker">
+        <MappingFragment StoreEntitySet="Worker">
+          <ScalarProperty Name="Id_worker" ColumnName="Id_worker" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="CodeLogin" ColumnName="CodeLogin" />
+          <ScalarProperty Name="Role_id" ColumnName="Role_id" />
+          <ScalarProperty Name="Face" ColumnName="Face" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
