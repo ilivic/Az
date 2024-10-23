@@ -47,5 +47,10 @@ namespace Hr_manager.VisualApp.PagesApp
                 MessageBox.Show(EX.Message);
             }
         }
+
+        private void ClEventAddStr(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageAddIntern());
+        }
     }
 }

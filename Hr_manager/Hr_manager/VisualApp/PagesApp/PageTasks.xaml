@@ -1,0 +1,51 @@
+﻿<Page x:Class="Hr_manager.VisualApp.PagesApp.PageTasks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageTasks">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <ComboBox>
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Border Width="50" Height="50" CornerRadius="50">
+                                <Border.Background>
+                                    <ImageBrush ImageSource="{Binding Photo}"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock Text="{Binding FullName}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" x:Name="SPIntr">
+            <Image Height="150" Width="150" Source="{Binding Photo}"/>
+            <Label Content="{Binding FullName}"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox/>
+        </StackPanel>
+        <StackPanel >
+            
+        </StackPanel>
+    </Grid>
+</Page>

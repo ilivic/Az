@@ -48,7 +48,7 @@
                 <Button  ToolTip="закрыть заадчу" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="сформировать отчёт" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="просмотреть отчёт" Margin="5" Background="#FF61C8AD"/>
-                <Button ToolTip="добавить стажера" Margin="5" Background="#FF61C8AD"/>
+                <Button Content="ДС" Click="ClEventAddStr" ToolTip="добавить стажера" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="добавить HR" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="пометить выполненное задание" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="уволить стажера" Margin="5" Background="#FF61C8AD"/>
