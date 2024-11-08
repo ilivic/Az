@@ -46,3 +46,7 @@ C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\P
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageAddIntern.baml
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageTasks.g.cs
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageTasks.baml
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageAddLocation.g.cs
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageAddTask.g.cs
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageAddLocation.baml
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageAddTask.baml

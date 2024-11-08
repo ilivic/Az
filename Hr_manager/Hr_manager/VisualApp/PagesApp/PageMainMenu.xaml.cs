@@ -52,5 +52,10 @@ namespace Hr_manager.VisualApp.PagesApp
         {
             NavigationService.Navigate(new PageAddIntern());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageAddLocation());
+        }
     }
 }

@@ -91,6 +91,12 @@
     <Compile Include="VisualApp\PagesApp\PageAddIntern.xaml.cs">
       <DependentUpon>PageAddIntern.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualApp\PagesApp\PageAddLocation.xaml.cs">
+      <DependentUpon>PageAddLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualApp\PagesApp\PageAddTask.xaml.cs">
+      <DependentUpon>PageAddTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VisualApp\PagesApp\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>
@@ -152,6 +158,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="VisualApp\PagesApp\PageAddIntern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageAddLocation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageAddTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
