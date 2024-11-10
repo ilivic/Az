@@ -9,6 +9,17 @@
       Title="PageAddTask">
 
     <Grid>
-        
+        <StackPanel>
+            <TextBox x:Name="TxtTitle"/>
+            <TextBox x:Name="TxtContent"/>
+            <ComboBox x:Name="CmbLocation">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Locc}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Content="Create task" Click="ClEventAddTask"/>
+        </StackPanel> 
     </Grid>
 </Page>

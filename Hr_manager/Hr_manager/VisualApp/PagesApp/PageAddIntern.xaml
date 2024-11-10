@@ -53,6 +53,7 @@
             <Button Content="Редактировать" Margin="10" Background="SkyBlue" ToolTip="Для редактирования стажера необходимо выбрать его из выпадающего списка и заполнить поля(фото можно выбрать через кнопку 'фото')" Click="ClEventUpDateIntr"/>
             <Button Content="Уволить" Margin="10" Click="CLEventDell" ToolTip="что бы уволить стажера необходимо выбрать из списка и нажать эту кнопку" Background="DarkRed"/>
             <Button Content="завершить стажировку" Click="ClEventFinis" Margin="10" Background="#FF12B57D"/>
+            <Button Content="Menu" Click="ClEventRevers"/>
         </StackPanel>
     </Grid>
 </Page>

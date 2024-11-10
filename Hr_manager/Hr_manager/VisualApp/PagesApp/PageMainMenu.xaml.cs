@@ -57,5 +57,21 @@ namespace Hr_manager.VisualApp.PagesApp
         {
             NavigationService.Navigate(new PageAddLocation());
         }
+
+        private void CLEventAddTask(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageAddTask());
+        }
+
+        private void ClEventShowListTask(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageListTask());
+        }
+
+        private void ClEventCHTaskIntr(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageFindTask());
+
+        }
     }
 }

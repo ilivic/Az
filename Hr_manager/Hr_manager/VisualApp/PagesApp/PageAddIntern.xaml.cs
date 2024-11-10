@@ -127,5 +127,10 @@ namespace Hr_manager.VisualApp.PagesApp
                 MessageBox.Show("Стажер не выбран");
             }
         }
+
+        private void ClEventRevers(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMainMenu());
+        }
     } 
 }

@@ -97,6 +97,15 @@
     <Compile Include="VisualApp\PagesApp\PageAddTask.xaml.cs">
       <DependentUpon>PageAddTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualApp\PagesApp\PageCHTask.xaml.cs">
+      <DependentUpon>PageCHTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualApp\PagesApp\PageFindTask.xaml.cs">
+      <DependentUpon>PageFindTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualApp\PagesApp\PageListTask.xaml.cs">
+      <DependentUpon>PageListTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VisualApp\PagesApp\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
     </Compile>
@@ -166,6 +175,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VisualApp\PagesApp\PageAddTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageCHTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageFindTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageListTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
