@@ -87,6 +87,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ADOApp\Histr.cs">
+      <DependentUpon>ModelHR.tt</DependentUpon>
+    </Compile>
     <Compile Include="ClassApp\ClassCorr.cs" />
     <Compile Include="VisualApp\PagesApp\PageAddIntern.xaml.cs">
       <DependentUpon>PageAddIntern.xaml</DependentUpon>

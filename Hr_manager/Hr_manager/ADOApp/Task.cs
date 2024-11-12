@@ -19,6 +19,7 @@ namespace Hr_manager.ADOApp
         {
             this.InternTask = new HashSet<InternTask>();
             this.Comment = new HashSet<Comment>();
+            this.Histr = new HashSet<Histr>();
         }
     
         public int Id_task { get; set; }
@@ -35,5 +36,7 @@ namespace Hr_manager.ADOApp
         public virtual Worker Worker { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comment { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Histr> Histr { get; set; }
     }
 }

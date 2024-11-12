@@ -18,6 +18,7 @@ namespace Hr_manager.ADOApp
         public Status()
         {
             this.Task = new HashSet<Task>();
+            this.Histr = new HashSet<Histr>();
         }
     
         public int Id_status { get; set; }
@@ -26,5 +27,7 @@ namespace Hr_manager.ADOApp
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Task> Task { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Histr> Histr { get; set; }
     }
 }

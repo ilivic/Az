@@ -33,5 +33,6 @@ namespace Hr_manager.ADOApp
         public virtual DbSet<Task> Task { get; set; }
         public virtual DbSet<Worker> Worker { get; set; }
         public virtual DbSet<Comment> Comment { get; set; }
+        public virtual DbSet<Histr> Histr { get; set; }
     }
 }
