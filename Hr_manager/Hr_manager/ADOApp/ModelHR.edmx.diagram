@@ -5,7 +5,6 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="81e09882f01e4ed9a386f3200e626e30" Name="Diagram1">
-        <EntityTypeShape EntityType="HR_specialistsModel.Comment" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="HR_specialistsModel.Intern" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
         <EntityTypeShape EntityType="HR_specialistsModel.InternTask" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
         <EntityTypeShape EntityType="HR_specialistsModel.Location" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
@@ -13,13 +12,14 @@
         <EntityTypeShape EntityType="HR_specialistsModel.Status" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="HR_specialistsModel.Task" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HR_specialistsModel.Worker" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
-        <AssociationConnector Association="HR_specialistsModel.FK_Comment_Task" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_InternTask_Intern" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_InternTask_Task" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_Task_Location" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_Worker_Role" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_Task_Status" ManuallyRouted="false" />
         <AssociationConnector Association="HR_specialistsModel.FK_Task_Worker" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HR_specialistsModel.Comment" Width="1.5" PointX="7.5" PointY="4" />
+        <AssociationConnector Association="HR_specialistsModel.FK_Comment_Task" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

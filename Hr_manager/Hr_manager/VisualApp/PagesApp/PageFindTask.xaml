@@ -10,6 +10,8 @@
 
     <Grid>
         <StackPanel>
+            <Button Content="меню" Click="ClEventRevers"/>
+            
             <ListView x:Name="ListTask">
                 <ListView.ItemTemplate>
                     <DataTemplate>

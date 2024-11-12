@@ -4,12 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище HR_specialistsModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище HR_specialistsModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Comment">
           <Key>
             <PropertyRef Name="Id_comment" />
           </Key>
-          <Property Name="Id_comment" Type="int" Nullable="false" />
+          <Property Name="Id_comment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Creater_id" Type="int" Nullable="false" />
           <Property Name="Text" Type="text" Nullable="false" />
           <Property Name="DateCreate" Type="date" Nullable="false" />
@@ -205,22 +205,10 @@
             <End Role="Worker" EntitySet="Worker" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HR_specialistsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Comment">
-          <Key>
-            <PropertyRef Name="Id_comment" />
-          </Key>
-          <Property Name="Id_comment" Type="Int32" Nullable="false" />
-          <Property Name="Creater_id" Type="Int32" Nullable="false" />
-          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="DateCreate" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Task_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Task" Relationship="Self.FK_Comment_Task" FromRole="Comment" ToRole="Task" />
-        </EntityType>
         <EntityType Name="Intern">
           <Key>
             <PropertyRef Name="Id_intern" />
@@ -284,11 +272,11 @@
           <Property Name="Status_id" Type="Int32" Nullable="false" />
           <Property Name="Creater_id" Type="Int32" Nullable="false" />
           <Property Name="Location_id" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Comment" Relationship="Self.FK_Comment_Task" FromRole="Task" ToRole="Comment" />
           <NavigationProperty Name="InternTask" Relationship="Self.FK_InternTask_Task" FromRole="Task" ToRole="InternTask" />
           <NavigationProperty Name="Location" Relationship="Self.FK_Task_Location" FromRole="Task" ToRole="Location" />
           <NavigationProperty Name="Status" Relationship="Self.FK_Task_Status" FromRole="Task" ToRole="Status" />
           <NavigationProperty Name="Worker" Relationship="Self.FK_Task_Worker" FromRole="Task" ToRole="Worker" />
+          <NavigationProperty Name="Comment" Relationship="HR_specialistsModel.FK_Comment_Task" FromRole="Task" ToRole="Comment" />
         </EntityType>
         <EntityType Name="Worker">
           <Key>
@@ -302,18 +290,6 @@
           <NavigationProperty Name="Role" Relationship="Self.FK_Worker_Role" FromRole="Worker" ToRole="Role" />
           <NavigationProperty Name="Task" Relationship="Self.FK_Task_Worker" FromRole="Worker" ToRole="Task" />
         </EntityType>
-        <Association Name="FK_Comment_Task">
-          <End Role="Task" Type="Self.Task" Multiplicity="1" />
-          <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Task">
-              <PropertyRef Name="Id_task" />
-            </Principal>
-            <Dependent Role="Comment">
-              <PropertyRef Name="Task_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_InternTask_Intern">
           <End Role="Intern" Type="Self.Intern" Multiplicity="1" />
           <End Role="InternTask" Type="Self.InternTask" Multiplicity="*" />
@@ -387,7 +363,6 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="HR_specialistsEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Comment" EntityType="Self.Comment" />
           <EntitySet Name="Intern" EntityType="Self.Intern" />
           <EntitySet Name="InternTask" EntityType="Self.InternTask" />
           <EntitySet Name="Location" EntityType="Self.Location" />
@@ -395,10 +370,6 @@
           <EntitySet Name="Status" EntityType="Self.Status" />
           <EntitySet Name="Task" EntityType="Self.Task" />
           <EntitySet Name="Worker" EntityType="Self.Worker" />
-          <AssociationSet Name="FK_Comment_Task" Association="Self.FK_Comment_Task">
-            <End Role="Task" EntitySet="Task" />
-            <End Role="Comment" EntitySet="Comment" />
-          </AssociationSet>
           <AssociationSet Name="FK_InternTask_Intern" Association="Self.FK_InternTask_Intern">
             <End Role="Intern" EntitySet="Intern" />
             <End Role="InternTask" EntitySet="InternTask" />
@@ -423,24 +394,41 @@
             <End Role="Worker" EntitySet="Worker" />
             <End Role="Task" EntitySet="Task" />
           </AssociationSet>
+          <EntitySet Name="Comment" EntityType="HR_specialistsModel.Comment" />
+          <AssociationSet Name="FK_Comment_Task" Association="HR_specialistsModel.FK_Comment_Task">
+            <End Role="Task" EntitySet="Task" />
+            <End Role="Comment" EntitySet="Comment" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Id_comment" />
+          </Key>
+          <Property Name="Id_comment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Creater_id" Type="Int32" Nullable="false" />
+          <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateCreate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Task_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Task" Relationship="HR_specialistsModel.FK_Comment_Task" FromRole="Comment" ToRole="Task" />
+        </EntityType>
+        <Association Name="FK_Comment_Task">
+          <End Type="HR_specialistsModel.Task" Role="Task" Multiplicity="1" />
+          <End Type="HR_specialistsModel.Comment" Role="Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Task">
+              <PropertyRef Name="Id_task" />
+            </Principal>
+            <Dependent Role="Comment">
+              <PropertyRef Name="Task_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище HR_specialistsModelContainer" CdmEntityContainer="HR_specialistsEntities">
-          <EntitySetMapping Name="Comment">
-            <EntityTypeMapping TypeName="HR_specialistsModel.Comment">
-              <MappingFragment StoreEntitySet="Comment">
-                <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
-                <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
-                <ScalarProperty Name="Text" ColumnName="Text" />
-                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
-                <ScalarProperty Name="Task_id" ColumnName="Task_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Intern">
             <EntityTypeMapping TypeName="HR_specialistsModel.Intern">
               <MappingFragment StoreEntitySet="Intern">
@@ -513,6 +501,17 @@
                 <ScalarProperty Name="CodeLogin" ColumnName="CodeLogin" />
                 <ScalarProperty Name="Role_id" ColumnName="Role_id" />
                 <ScalarProperty Name="Face" ColumnName="Face" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Comment">
+            <EntityTypeMapping TypeName="HR_specialistsModel.Comment">
+              <MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="Task_id" ColumnName="Task_id" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
+                <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

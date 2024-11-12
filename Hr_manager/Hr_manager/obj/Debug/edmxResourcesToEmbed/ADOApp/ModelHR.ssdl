@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="Id_comment" />
     </Key>
-    <Property Name="Id_comment" Type="int" Nullable="false" />
+    <Property Name="Id_comment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Creater_id" Type="int" Nullable="false" />
     <Property Name="Text" Type="text" Nullable="false" />
     <Property Name="DateCreate" Type="date" Nullable="false" />

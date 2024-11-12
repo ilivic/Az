@@ -49,5 +49,10 @@ namespace Hr_manager.VisualApp.PagesApp
             }
 
         }
+
+        private void ClEventREvers(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMainMenu());
+        }
     }
 }

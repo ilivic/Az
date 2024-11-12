@@ -10,6 +10,7 @@
 
     <Grid>
         <StackPanel>
+            <Button Content="Menu" Click="ClEventRevers"/>
             <TextBlock Text="{Binding Title}"/>
             <TextBlock Text="{Binding TContent}"/>
             <ComboBox x:Name="CmbStatus">
@@ -20,15 +21,17 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <StackPanel>
-                <Button Content="Add comment"/>
-                <Frame x:Name="NavigationCommentFrame"/>
+                <Button Content="Add comment" Click="CLEventShowComment"/>
+                <StackPanel Visibility="Hidden" Orientation="Horizontal" x:Name="StackComment">
+                    <TextBox x:Name="TxtComment" TextWrapping="Wrap" Width="650" Height="150"/>
+                    <Button Content="Send" Click="ClEventSendCooment"/>
+                </StackPanel>
                 <ListView x:Name="ListComments">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
                                 <Label Content="{Binding Text}"/>
-                                <Label/>
-                                <Label/>
+                                <Label Content="{Binding DateCreate}"/>
                             </StackPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>

@@ -59,5 +59,10 @@ namespace Hr_manager.VisualApp.PagesApp
                     MessageBox.Show("Не все необходимые поля заполнены");
             }
         }
+
+        private void ClEventRevers(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMainMenu());
+        }
     }
 }

@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище HR_specialistsModelContainer" CdmEntityContainer="HR_specialistsEntities">
-    <EntitySetMapping Name="Comment">
-      <EntityTypeMapping TypeName="HR_specialistsModel.Comment">
-        <MappingFragment StoreEntitySet="Comment">
-          <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
-          <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
-          <ScalarProperty Name="Text" ColumnName="Text" />
-          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
-          <ScalarProperty Name="Task_id" ColumnName="Task_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Intern">
       <EntityTypeMapping TypeName="HR_specialistsModel.Intern">
         <MappingFragment StoreEntitySet="Intern">
@@ -84,6 +73,17 @@
           <ScalarProperty Name="CodeLogin" ColumnName="CodeLogin" />
           <ScalarProperty Name="Role_id" ColumnName="Role_id" />
           <ScalarProperty Name="Face" ColumnName="Face" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comment">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="Task_id" ColumnName="Task_id" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Creater_id" ColumnName="Creater_id" />
+          <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

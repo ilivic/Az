@@ -10,8 +10,8 @@
 
     <Grid>
         <StackPanel>
-            
-        <TextBox x:Name="TxtName"/>
+            <Button Content="Menu" Click="ClEventREvers"/>
+            <TextBox x:Name="TxtName"/>
         <TextBox x:Name="TxtAdress"/>
         <Button Click="Button_Click"  Content="Get Photo Location"/>
         <TextBox x:Name="TxtDiskroption"/>

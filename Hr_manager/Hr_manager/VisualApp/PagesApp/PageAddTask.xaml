@@ -10,6 +10,7 @@
 
     <Grid>
         <StackPanel>
+            <Button Content="Menu" Click="ClEventRevers"/>
             <TextBox x:Name="TxtTitle"/>
             <TextBox x:Name="TxtContent"/>
             <ComboBox x:Name="CmbLocation">

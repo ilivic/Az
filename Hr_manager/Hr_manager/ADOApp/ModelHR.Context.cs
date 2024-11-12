@@ -25,7 +25,6 @@ namespace Hr_manager.ADOApp
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Comment> Comment { get; set; }
         public virtual DbSet<Intern> Intern { get; set; }
         public virtual DbSet<InternTask> InternTask { get; set; }
         public virtual DbSet<Location> Location { get; set; }
@@ -33,5 +32,6 @@ namespace Hr_manager.ADOApp
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<Task> Task { get; set; }
         public virtual DbSet<Worker> Worker { get; set; }
+        public virtual DbSet<Comment> Comment { get; set; }
     }
 }

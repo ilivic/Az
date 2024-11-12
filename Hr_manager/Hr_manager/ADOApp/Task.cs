@@ -17,8 +17,8 @@ namespace Hr_manager.ADOApp
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Task()
         {
-            this.Comment = new HashSet<Comment>();
             this.InternTask = new HashSet<InternTask>();
+            this.Comment = new HashSet<Comment>();
         }
     
         public int Id_task { get; set; }
@@ -29,11 +29,11 @@ namespace Hr_manager.ADOApp
         public int Location_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comment> Comment { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<InternTask> InternTask { get; set; }
         public virtual Location Location { get; set; }
         public virtual Status Status { get; set; }
         public virtual Worker Worker { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Comment> Comment { get; set; }
     }
 }
