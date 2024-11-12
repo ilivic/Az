@@ -39,5 +39,15 @@ namespace Hr_manager.VisualApp.PagesApp
             var _sel = (sender as ListView).SelectedItem as ADOApp.Task;
             NavigationService.Navigate(new PageCHTask(_sel));
         }
+
+        private void ClEventRezetTask(object sender, RoutedEventArgs e)
+        {
+            var _sel = (sender as Button).DataContext as ADOApp.Task;
+            _sel.Status_id = 1;
+            App.Connection.InternTask.Remove(_sel.InternTask.First());
+            App.Connection.SaveChanges();
+            MessageBox.Show("Задание переназначенно");
+            NavigationService.Navigate(new PageListTask());
+        }
     }
 }

@@ -103,6 +103,9 @@
     <Compile Include="VisualApp\PagesApp\PageFindTask.xaml.cs">
       <DependentUpon>PageFindTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualApp\PagesApp\PageInternList.xaml.cs">
+      <DependentUpon>PageInternList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VisualApp\PagesApp\PageListTask.xaml.cs">
       <DependentUpon>PageListTask.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,9 @@
     </Compile>
     <Compile Include="VisualApp\PagesApp\PageMainMenu.xaml.cs">
       <DependentUpon>PageMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisualApp\PagesApp\PageTaskComplit.xaml.cs">
+      <DependentUpon>PageTaskComplit.xaml</DependentUpon>
     </Compile>
     <Compile Include="VisualApp\PagesApp\PageTasks.xaml.cs">
       <DependentUpon>PageTasks.xaml</DependentUpon>
@@ -186,6 +192,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VisualApp\PagesApp\PageInternList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VisualApp\PagesApp\PageListTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -195,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VisualApp\PagesApp\PageMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageTaskComplit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -21,6 +21,7 @@
         </Grid.RowDefinitions>
             <Button Content="Menu" Click="CLEventRevers"/>
         <StackPanel Grid.Row="1">
+            <Label FontSize="24" Content="новые"/>
             <ListView x:Name="ListTaskCreate" SelectionChanged="ListTaskCreate_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -33,6 +34,7 @@
             </ListView>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1">
+            <Label FontSize="24" Content="отправленные на выполнение"/>
             <ListView x:Name="ListTaskAdd" SelectionChanged="ListTaskCreate_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -45,6 +47,7 @@
             </ListView>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="1">
+            <Label Content="выполненные" FontSize="24"/>
             <ListView x:Name="ListTaskRedi" SelectionChanged="ListTaskCreate_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -57,12 +60,14 @@
             </ListView>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="1">
+            <Label Content="не выполненные" FontSize="24"/>
             <ListView x:Name="ListTaskError" SelectionChanged="ListTaskCreate_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
                             <TextBlock Text="{Binding Title}"/>
                             <TextBlock Text="{Binding TContent}"/>
+                            <Button Content="Переназначить" Click="ClEventRezetTask"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

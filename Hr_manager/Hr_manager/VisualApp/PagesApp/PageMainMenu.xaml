@@ -21,14 +21,30 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel Background="#FF234B6E" Margin="5">
-            
+        <StackPanel Background="#FF234B6E" Margin="5" >
+            <Label FontSize="16" Content="Общий прогресс"/>
+            <Label x:Name="LBLCount" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ProgressBar x:Name="PBTask" Height="25" Background="Pink" VerticalAlignment="Center" Foreground="#FF61C8AD" Margin="20"/>
         </StackPanel>
         <StackPanel Background="#FFF2AEA3" Margin="5" Grid.RowSpan="3" Grid.Row="1">
-
+            <Label FontSize="16" Content="отдельный прогресс"/>
+            <StackPanel x:Name="SkrInternProgress">
+                
+            </StackPanel>
         </StackPanel>
         <StackPanel Background="#FF61C8AD" Margin="5" Grid.Column="1" Grid.RowSpan="4">
-
+            <Label FontSize="16" Content="сегодня истекает срок выпонения"/>
+            <ListView x:Name="ListTaskShow">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Label Content="{Binding Task.Title}"/>
+                            <Label Content="{Binding DateBegin}"/>
+                            <Label Content="{Binding DateEnd}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackPanel>
         <Grid Background="#FFEDEEF2"  Margin="5" Grid.Column="2" Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -36,7 +52,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="стажеры" Grid.Column="0" Background="#FF61C8AD" BorderThickness="0" Margin="5" Height="90" FontSize="24"/>
+            <Button Content="стажеры" Grid.Column="0" Background="#FF61C8AD" Click="ClEventShowIntern" BorderThickness="0" Margin="5" Height="90" FontSize="24"/>
             <Button Content="задачи" Click="ClEventShowListTask" Grid.Column="1" Background="#FFF2AEA3" BorderThickness="0" Margin="5" Height="90" FontSize="24"/>
             <Button Content="отчеты" Grid.Column="2" Background="#FF234B6E" BorderThickness="0" Margin="5" Height="90" FontSize="24"/>
            
@@ -45,12 +61,11 @@
             <Label Content="инструменты"/>
             <WrapPanel>
                 <Button Content="CT" ToolTip="создать задачу" Click="CLEventAddTask" Margin="5" Background="Blue"/>
-                <Button  ToolTip="закрыть заадчу" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="сформировать отчёт" Margin="5" Background="#FF61C8AD"/>
                 <Button Content="ДЛ" Click="Button_Click" ToolTip="лобавить локацию" Margin="5" Background="Blue"/>
                 <Button Content="ДС" Click="ClEventAddStr" ToolTip="добавить стажера" Margin="5" Background="Blue"/>
                 <Button ToolTip="добавить HR" Margin="5" Background="#FF61C8AD"/>
-                <Button ToolTip="пометить выполненное задание" Margin="5" Background="#FF61C8AD"/>
+                <Button ToolTip="пометить выполненное задание" Content="ПВ" Click="CLEventTaskComplit" Margin="5" Background="Blue"/>
                 <Button ToolTip="уволить стажера" Margin="5" Background="#FF61C8AD"/>
                 <Button ToolTip="список не выполненных задач" Margin="10" Background="#FF61C8AD"/>
                 <Button ToolTip="перенести задачу" Content="ВЗ" Click="ClEventCHTaskIntr" Margin="10" Background="Blue"/>
