@@ -20,7 +20,7 @@
         <AssociationConnector Association="HR_specialistsModel.FK_Task_Worker" ManuallyRouted="false" />
         <EntityTypeShape EntityType="HR_specialistsModel.Comment" Width="1.5" PointX="7.5" PointY="4" />
         <AssociationConnector Association="HR_specialistsModel.FK_Comment_Task" />
-        <EntityTypeShape EntityType="HR_specialistsModel.Histr" Width="1.5" PointX="10.5" PointY="7.25" />
+        <EntityTypeShape EntityType="HR_specialistsModel.Histr" Width="1.5" PointX="10.5" PointY="8.125" />
         <AssociationConnector Association="HR_specialistsModel.FK_Histr_Intern" />
         <AssociationConnector Association="HR_specialistsModel.FK_Histr_Status" />
         <AssociationConnector Association="HR_specialistsModel.FK_Histr_Task" />

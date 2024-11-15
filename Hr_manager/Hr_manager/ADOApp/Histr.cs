@@ -19,6 +19,7 @@ namespace Hr_manager.ADOApp
         public int status_id { get; set; }
         public Nullable<int> Intern_id { get; set; }
         public System.DateTime date { get; set; }
+        public string Title { get; set; }
     
         public virtual Intern Intern { get; set; }
         public virtual Status Status { get; set; }

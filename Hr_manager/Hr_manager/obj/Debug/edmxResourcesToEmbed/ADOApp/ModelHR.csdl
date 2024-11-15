@@ -11,6 +11,7 @@
     <Property Name="DataFinish" Type="DateTime" Precision="0" />
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="InternTask" Relationship="Self.FK_InternTask_Intern" FromRole="Intern" ToRole="InternTask" />
+    <NavigationProperty Name="Histr" Relationship="HR_specialistsModel.FK_Histr_Intern" FromRole="Intern" ToRole="Histr" />
   </EntityType>
   <EntityType Name="InternTask">
     <Key>
@@ -52,6 +53,7 @@
     <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Task" Relationship="Self.FK_Task_Status" FromRole="Status" ToRole="Task" />
+    <NavigationProperty Name="Histr" Relationship="HR_specialistsModel.FK_Histr_Status" FromRole="Status" ToRole="Histr" />
   </EntityType>
   <EntityType Name="Task">
     <Key>
@@ -68,6 +70,7 @@
     <NavigationProperty Name="Status" Relationship="Self.FK_Task_Status" FromRole="Task" ToRole="Status" />
     <NavigationProperty Name="Worker" Relationship="Self.FK_Task_Worker" FromRole="Task" ToRole="Worker" />
     <NavigationProperty Name="Comment" Relationship="HR_specialistsModel.FK_Comment_Task" FromRole="Task" ToRole="Comment" />
+    <NavigationProperty Name="Histr" Relationship="HR_specialistsModel.FK_Histr_Task" FromRole="Task" ToRole="Histr" />
   </EntityType>
   <EntityType Name="Worker">
     <Key>
@@ -190,6 +193,19 @@
       <End Role="Task" EntitySet="Task" />
       <End Role="Comment" EntitySet="Comment" />
     </AssociationSet>
+    <EntitySet Name="Histr" EntityType="HR_specialistsModel.Histr" />
+    <AssociationSet Name="FK_Histr_Intern" Association="HR_specialistsModel.FK_Histr_Intern">
+      <End Role="Intern" EntitySet="Intern" />
+      <End Role="Histr" EntitySet="Histr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Histr_Status" Association="HR_specialistsModel.FK_Histr_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Histr" EntitySet="Histr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Histr_Task" Association="HR_specialistsModel.FK_Histr_Task">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="Histr" EntitySet="Histr" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Comment">
     <Key>
@@ -210,6 +226,56 @@
         <PropertyRef Name="Id_task" />
       </Principal>
       <Dependent Role="Comment">
+        <PropertyRef Name="Task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Histr">
+    <Key>
+      <PropertyRef Name="id_Hist" />
+    </Key>
+    <Property Name="id_Hist" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Task_id" Type="Int32" Nullable="false" />
+    <Property Name="status_id" Type="Int32" Nullable="false" />
+    <Property Name="Intern_id" Type="Int32" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Intern" Relationship="HR_specialistsModel.FK_Histr_Intern" FromRole="Histr" ToRole="Intern" />
+    <NavigationProperty Name="Status" Relationship="HR_specialistsModel.FK_Histr_Status" FromRole="Histr" ToRole="Status" />
+    <NavigationProperty Name="Task" Relationship="HR_specialistsModel.FK_Histr_Task" FromRole="Histr" ToRole="Task" />
+  </EntityType>
+  <Association Name="FK_Histr_Intern">
+    <End Type="HR_specialistsModel.Intern" Role="Intern" Multiplicity="0..1" />
+    <End Type="HR_specialistsModel.Histr" Role="Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Intern">
+        <PropertyRef Name="Id_intern" />
+      </Principal>
+      <Dependent Role="Histr">
+        <PropertyRef Name="Intern_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Histr_Status">
+    <End Type="HR_specialistsModel.Status" Role="Status" Multiplicity="1" />
+    <End Type="HR_specialistsModel.Histr" Role="Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id_status" />
+      </Principal>
+      <Dependent Role="Histr">
+        <PropertyRef Name="status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Histr_Task">
+    <End Type="HR_specialistsModel.Task" Role="Task" Multiplicity="1" />
+    <End Type="HR_specialistsModel.Histr" Role="Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id_task" />
+      </Principal>
+      <Dependent Role="Histr">
         <PropertyRef Name="Task_id" />
       </Dependent>
     </ReferentialConstraint>

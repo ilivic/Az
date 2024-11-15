@@ -60,3 +60,5 @@ C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\P
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageTaskComplit.baml
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageInternList.g.cs
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageInternList.baml
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageCreateX.g.cs
+C:\Users\Laila\source\repos\Hr_manager\Hr_manager\obj\Debug\VisualApp\PagesApp\PageCreateX.baml

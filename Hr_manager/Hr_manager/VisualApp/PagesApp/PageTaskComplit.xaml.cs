@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hr_manager.ADOApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,14 @@ namespace Hr_manager.VisualApp.PagesApp
         private void ClEventADDComplit(object sender, RoutedEventArgs e)
         {
             _selTask.Task.Status_id = 3;
+            App.Connection.Histr.Add(new Histr()
+            {
+                Task = _selTask.Task,
+                date = DateTime.Now,
+                status_id = 3,
+                Intern = _selTask.Intern,
+                Title = _selTask.Task.Title,
+            });
             App.Connection.SaveChanges();
             MessageBox.Show("Задание приянто");
             NavigationService.Navigate(new PageTaskComplit());
@@ -55,6 +64,14 @@ namespace Hr_manager.VisualApp.PagesApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _selTask.Task.Status_id = 4;
+            App.Connection.Histr.Add(new Histr()
+            {
+                Task = _selTask.Task,
+                date = DateTime.Now,
+                status_id = 4,
+                Intern = _selTask.Intern,
+                Title = _selTask.Task.Title,
+            });
             App.Connection.SaveChanges();
             MessageBox.Show("Задание не приянто");
             NavigationService.Navigate(new PageTaskComplit());

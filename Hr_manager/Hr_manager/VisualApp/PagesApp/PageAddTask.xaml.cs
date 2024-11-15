@@ -35,16 +35,25 @@ namespace Hr_manager.VisualApp.PagesApp
                 try
                 {
                     var _sel = (CmbLocation.SelectedItem as Location);
-                    App.Connection.Task.Add(new ADOApp.Task()
+                    var _task = new ADOApp.Task()
                     {
                         Title = TxtTitle.Text,
                         TContent = TxtContent.Text,
                         Status_id = 1,
                         Location = _sel,
-                        Creater_id = ClassCorr.CorrUser.Id_worker
-                    });
+                        Creater_id = ClassCorr.CorrUser.Id_worker,
+                    };
+                    App.Connection.Task.Add(_task); 
                     App.Connection.SaveChanges();
                     MessageBox.Show("задание созданно");
+                    App.Connection.Histr.Add(new Histr()
+                    {
+                        Task = _task,
+                        date = DateTime.Now,
+                        status_id = 1,
+                        Title = TxtTitle.Text,
+                    });
+                    App.Connection.SaveChanges();
                     NavigationService.Navigate(new PageListTask());
                 }
                 catch (Exception ex)

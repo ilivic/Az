@@ -103,6 +103,9 @@
     <Compile Include="VisualApp\PagesApp\PageCHTask.xaml.cs">
       <DependentUpon>PageCHTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualApp\PagesApp\PageCreateX.xaml.cs">
+      <DependentUpon>PageCreateX.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VisualApp\PagesApp\PageFindTask.xaml.cs">
       <DependentUpon>PageFindTask.xaml</DependentUpon>
     </Compile>
@@ -188,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VisualApp\PagesApp\PageCHTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualApp\PagesApp\PageCreateX.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

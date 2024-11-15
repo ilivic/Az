@@ -10,6 +10,17 @@
     <Property Name="DateCreate" Type="date" Nullable="false" />
     <Property Name="Task_id" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="Histr">
+    <Key>
+      <PropertyRef Name="id_Hist" />
+    </Key>
+    <Property Name="id_Hist" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Task_id" Type="int" Nullable="false" />
+    <Property Name="status_id" Type="int" Nullable="false" />
+    <Property Name="Intern_id" Type="int" />
+    <Property Name="date" Type="date" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" />
+  </EntityType>
   <EntityType Name="Intern">
     <Key>
       <PropertyRef Name="Id_intern" />
@@ -90,6 +101,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Histr_Intern">
+    <End Role="Intern" Type="Self.Intern" Multiplicity="0..1" />
+    <End Role="Histr" Type="Self.Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Intern">
+        <PropertyRef Name="Id_intern" />
+      </Principal>
+      <Dependent Role="Histr">
+        <PropertyRef Name="Intern_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Histr_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="Histr" Type="Self.Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id_status" />
+      </Principal>
+      <Dependent Role="Histr">
+        <PropertyRef Name="status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Histr_Task">
+    <End Role="Task" Type="Self.Task" Multiplicity="1" />
+    <End Role="Histr" Type="Self.Histr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Id_task" />
+      </Principal>
+      <Dependent Role="Histr">
+        <PropertyRef Name="Task_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_InternTask_Intern">
     <End Role="Intern" Type="Self.Intern" Multiplicity="1" />
     <End Role="InternTask" Type="Self.InternTask" Multiplicity="*" />
@@ -164,6 +211,7 @@
   </Association>
   <EntityContainer Name="Хранилище HR_specialistsModelContainer">
     <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Histr" EntityType="Self.Histr" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Intern" EntityType="Self.Intern" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="InternTask" EntityType="Self.InternTask" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Location" EntityType="Self.Location" Schema="dbo" store:Type="Tables" />
@@ -174,6 +222,18 @@
     <AssociationSet Name="FK_Comment_Task" Association="Self.FK_Comment_Task">
       <End Role="Task" EntitySet="Task" />
       <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Histr_Intern" Association="Self.FK_Histr_Intern">
+      <End Role="Intern" EntitySet="Intern" />
+      <End Role="Histr" EntitySet="Histr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Histr_Status" Association="Self.FK_Histr_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Histr" EntitySet="Histr" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Histr_Task" Association="Self.FK_Histr_Task">
+      <End Role="Task" EntitySet="Task" />
+      <End Role="Histr" EntitySet="Histr" />
     </AssociationSet>
     <AssociationSet Name="FK_InternTask_Intern" Association="Self.FK_InternTask_Intern">
       <End Role="Intern" EntitySet="Intern" />

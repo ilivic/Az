@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Laila\source\repos\Hr_manager\Hr_manager\App.xaml
-12-1022207849
+13-488257868
 21749424507
-28-150332462
+30-1229116062
 27-5235717
-VisualApp\MainWindow.xaml;VisualApp\PagesApp\PageAddIntern.xaml;VisualApp\PagesApp\PageAddLocation.xaml;VisualApp\PagesApp\PageAddTask.xaml;VisualApp\PagesApp\PageCHTask.xaml;VisualApp\PagesApp\PageFindTask.xaml;VisualApp\PagesApp\PageInternList.xaml;VisualApp\PagesApp\PageListTask.xaml;VisualApp\PagesApp\PageLogin.xaml;VisualApp\PagesApp\PageMainMenu.xaml;VisualApp\PagesApp\PageTaskComplit.xaml;VisualApp\PagesApp\PageTasks.xaml;
+VisualApp\MainWindow.xaml;VisualApp\PagesApp\PageAddIntern.xaml;VisualApp\PagesApp\PageAddLocation.xaml;VisualApp\PagesApp\PageAddTask.xaml;VisualApp\PagesApp\PageCHTask.xaml;VisualApp\PagesApp\PageCreateX.xaml;VisualApp\PagesApp\PageFindTask.xaml;VisualApp\PagesApp\PageInternList.xaml;VisualApp\PagesApp\PageListTask.xaml;VisualApp\PagesApp\PageLogin.xaml;VisualApp\PagesApp\PageMainMenu.xaml;VisualApp\PagesApp\PageTaskComplit.xaml;VisualApp\PagesApp\PageTasks.xaml;
 
 False
 

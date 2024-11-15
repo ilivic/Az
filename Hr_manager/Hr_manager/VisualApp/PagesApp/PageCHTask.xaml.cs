@@ -59,6 +59,7 @@ namespace Hr_manager.VisualApp.PagesApp
                     Task_id = _sel.Id_task
                 });
                 App.Connection.SaveChanges();
+
                 NavigationService.Navigate(new PageCHTask(_sel));
             }
         }

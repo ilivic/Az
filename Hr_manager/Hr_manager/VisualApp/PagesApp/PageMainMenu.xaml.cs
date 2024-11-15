@@ -115,5 +115,11 @@ namespace Hr_manager.VisualApp.PagesApp
             NavigationService.Navigate(new PageInternList());
 
         }
+
+        private void ClEventCreateXReport(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageCreateX());
+
+        }
     }
 }

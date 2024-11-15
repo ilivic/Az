@@ -47,6 +47,15 @@ namespace Hr_manager.VisualApp.PagesApp
                         DateEnd = DPE.SelectedDate.Value.Date,
                     });
                     App.Connection.SaveChanges();
+                    App.Connection.Histr.Add(new Histr()
+                    {
+                        Task = _task,
+                        date = DateTime.Now,
+                        status_id = 2,
+                        Title = _task.Title,
+                        Intern = _intern
+                    });
+                    App.Connection.SaveChanges();
                     MessageBox.Show("Задача привязанна к стажёру и поставлены сроки выполнения");
                 }
                 catch (Exception ex)

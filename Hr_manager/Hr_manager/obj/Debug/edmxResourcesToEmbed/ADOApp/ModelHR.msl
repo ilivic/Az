@@ -87,5 +87,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Histr">
+      <EntityTypeMapping TypeName="HR_specialistsModel.Histr">
+        <MappingFragment StoreEntitySet="Histr">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Intern_id" ColumnName="Intern_id" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="Task_id" ColumnName="Task_id" />
+          <ScalarProperty Name="id_Hist" ColumnName="id_Hist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
