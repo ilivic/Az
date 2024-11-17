@@ -21,11 +21,22 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Button Content="сформировать"/>
+            <Button Content="сформировать" Click="CreateXReport" Margin="1"/>
+            <Button Content="Х отчет" Click="CreateXReport" Margin="1" />
         </StackPanel>
-        <StackPanel Grid.Column="1">
-            <TextBlock x:Name="TxtStatistick"/>
-            <TextBlock x:Name="TxtCount"/>
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock x:Name="TxtStatistick" FontSize="16" TextWrapping="Wrap"/>
+            <TextBlock x:Name="TxtCount" FontSize="16" TextWrapping="Wrap"/>
+            <Button Content="Импортировать" Click="ClEventCreateSelImport"/>
+            <DataGrid x:Name="DGT" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="номер" Binding="{Binding Task.id_Task}"/>
+                    <DataGridTextColumn Header="название" Binding="{Binding Task.Title}"/>
+                    <DataGridTextColumn Header="статус" Binding="{Binding Task.Status.Info}"/>
+                    <DataGridTextColumn Header="дата начала" Binding="{Binding DateBegin ,StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                    <DataGridTextColumn Header="срок" Binding="{Binding DateEnd,StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
     </Grid>
 </Page>
