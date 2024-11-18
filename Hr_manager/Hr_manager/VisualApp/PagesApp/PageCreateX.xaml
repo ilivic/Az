@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
       mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageCreateX">
 
@@ -14,7 +15,8 @@
             <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <ComboBox x:Name="CMBIntern">
+            <Button Content="Menu" Click="ClEventRevers"/>
+            <ComboBox x:Name="CMBIntern" materialDesign:HintAssist.Hint="Стажер">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <Label Content="{Binding FullName}"/>
@@ -22,7 +24,7 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
             <Button Content="сформировать" Click="CreateXReport" Margin="1"/>
-            <Button Content="Х отчет" Click="CreateXReport" Margin="1" />
+            <Button Content="Х отчет" Click="CreateXReport" Margin="1" Visibility="Hidden" />
         </StackPanel>
         <StackPanel Grid.Column="1" Margin="10">
             <TextBlock x:Name="TxtStatistick" FontSize="16" TextWrapping="Wrap"/>

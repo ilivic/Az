@@ -23,7 +23,7 @@
             <StackPanel>
                 <Button Content="Add comment" Click="CLEventShowComment"/>
                 <StackPanel Visibility="Hidden" Orientation="Horizontal" x:Name="StackComment">
-                    <TextBox x:Name="TxtComment" TextWrapping="Wrap" Width="650" Height="150"/>
+                    <TextBox x:Name="TxtComment"  TextWrapping="Wrap" Width="650" Height="150"/>
                     <Button Content="Send" Click="ClEventSendCooment"/>
                 </StackPanel>
                 <ListView x:Name="ListComments">

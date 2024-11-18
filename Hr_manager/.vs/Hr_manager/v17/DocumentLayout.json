@@ -3,84 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagecreatex.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagetaskcomplit.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagetaskcomplit.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagechtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagechtask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageinternlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageinternlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddintern.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddintern.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddintern.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddintern.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagetasks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagetasks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagetaskcomplit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagetaskcomplit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagemainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagelogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagelisttask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pageinternlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageinternlist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagechtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagechtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddlocation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|c:\\users\\laila\\source\\repos\\hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddlocation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddlocation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagefindtask.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pagetasks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pagetasks.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|C:\\Users\\Laila\\source\\repos\\Hr_manager\\hr_manager\\visualapp\\pagesapp\\pageaddlocation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00220300-26F8-4851-A35E-00AD080ADAF5}|Hr_manager\\Hr_manager.csproj|solutionrelative:hr_manager\\visualapp\\pagesapp\\pageaddlocation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,65 +58,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "VisualApp\\PagesApp\\PageCreateX.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAgwF4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T18:40:48.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageTasks.xaml",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T18:39:47.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PageMainMenu.xaml",
               "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml",
               "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml",
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:11:46.474Z"
+              "WhenOpened": "2024-11-18T18:39:41.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
+              "Title": "PageLogin.xaml",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageLogin.xaml",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageLogin.xaml",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageLogin.xaml",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageLogin.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T18:39:39.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageListTask.xaml",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T18:39:35.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageInternList.xaml",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T18:35:51.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PageFindTask.xaml",
               "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml",
               "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml",
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:03:23.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PageCHTask.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:10:46.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PageTaskComplit.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAiwEcAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:11:11.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageMainMenu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageMainMenu.xaml.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAA6wHgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:08:57.786Z"
+              "WhenOpened": "2024-11-18T18:32:57.769Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,169 +154,56 @@
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-15T07:03:48.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PageAddIntern.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:29:19.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageCreateX.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageCreateX.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T07:40:00.769Z",
+              "WhenOpened": "2024-11-15T07:03:48.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PageAddTask.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:09:58.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PageAddTask.xaml",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:09:38.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PageFindTask.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageFindTask.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:03:39.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PageListTask.xaml",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:11:15.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VisualApp\\PagesApp\\PageListTask.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageListTask.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAcwDEAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:51:44.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VisualApp\\PagesApp\\PageInternList.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageInternList.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBkAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T06:32:15.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "PageTaskComplit.xaml",
               "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml",
               "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml",
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageTaskComplit.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-12T06:08:45.463Z"
+              "WhenOpened": "2024-11-12T06:08:45.463Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PageAddIntern.xaml",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddIntern.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:04:19.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "PageCHTask.xaml",
               "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml",
               "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml",
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageCHTask.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:10:29.547Z"
+              "WhenOpened": "2024-11-10T19:10:29.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
+              "Title": "PageAddTask.xaml",
+              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
+              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
+              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
+              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddTask.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-18T18:28:58.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PageAddLocation.xaml",
               "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml",
               "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml",
               "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml",
               "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:04:26.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PageTasks.xaml",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageTasks.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T19:11:20.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "VisualApp\\PagesApp\\PageAddLocation.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml.cs",
-              "RelativeDocumentMoniker": "Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml.cs",
-              "ToolTip": "C:\\Users\\Laila\\source\\repos\\Hr_manager\\Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml.cs",
-              "RelativeToolTip": "Hr_manager\\VisualApp\\PagesApp\\PageAddLocation.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwDYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:04:46.602Z"
+              "WhenOpened": "2024-11-18T18:27:41.596Z",
+              "EditorCaption": ""
             }
           ]
         }

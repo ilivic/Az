@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageAddLocation">
@@ -11,10 +12,10 @@
     <Grid>
         <StackPanel>
             <Button Content="Menu" Click="ClEventREvers"/>
-            <TextBox x:Name="TxtName"/>
-        <TextBox x:Name="TxtAdress"/>
+            <TextBox materialDesign:HintAssist.Hint="Название локаций" x:Name="TxtName"/>
+            <TextBox materialDesign:HintAssist.Hint="Адрес" x:Name="TxtAdress"/>
         <Button Click="Button_Click"  Content="Get Photo Location"/>
-        <TextBox x:Name="TxtDiskroption"/>
+            <TextBox x:Name="TxtDiskroption" materialDesign:HintAssist.Hint="Описание"/>
         <Button Content="AddLocation" Click="Button_Click_1"/>
         </StackPanel>
     </Grid>

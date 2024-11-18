@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageFindTask">
@@ -12,6 +13,7 @@
         <StackPanel>
             <Button Content="меню" Click="ClEventRevers"/>
             
+            <Label Content="Задача:"/>
             <ListView x:Name="ListTask">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -19,6 +21,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label Content="Стажер:"/>
             <ListView x:Name="ListIntern">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -26,8 +29,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <DatePicker Name="DPB"/>
-            <DatePicker Name="DPE"/>
+            <DatePicker Name="DPB" materialDesign:HintAssist.Hint="дата начала выполнения"/>
+            <DatePicker Name="DPE" materialDesign:HintAssist.Hint="дата окончания выполнения"/>
             <Button Content="Create" Click="ClEventCreate"/>
         </StackPanel>
     </Grid>

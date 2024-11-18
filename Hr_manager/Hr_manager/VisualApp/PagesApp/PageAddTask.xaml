@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Hr_manager.VisualApp.PagesApp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageAddTask">
@@ -11,9 +12,9 @@
     <Grid>
         <StackPanel>
             <Button Content="Menu" Click="ClEventRevers"/>
-            <TextBox x:Name="TxtTitle"/>
-            <TextBox x:Name="TxtContent"/>
-            <ComboBox x:Name="CmbLocation">
+            <TextBox x:Name="TxtTitle" materialDesign:HintAssist.Hint="Название задачи"/>
+            <TextBox x:Name="TxtContent" materialDesign:HintAssist.Hint="Информация"/>
+            <ComboBox x:Name="CmbLocation" materialDesign:HintAssist.Hint="Локация">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding Locc}"/>
